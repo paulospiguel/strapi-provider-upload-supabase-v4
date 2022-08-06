@@ -15,7 +15,7 @@
 1. Install this package
 
 ```
-npm i @strapi/provider-upload-supabase
+npm i strapi-provider-upload-supabase-v4
 ```
 
 2. Create config in `./config.js` with content
@@ -51,6 +51,34 @@ SUPABASE_API_URL="<Your Supabase url>"
 SUPABASE_API_KEY="<Your Supabase api key>"
 SUPABASE_BUCKET="strapi-uploads"
 SUPABASE_DIRECTORY=""
+```
+
+4. Create middleware in `./middlewares.js` with content
+
+```
+module.exports = ({ env }) => [
+  "strapi::errors",
+  {
+    name: "strapi::security",
+    config: {
+      contentSecurityPolicy: {
+        directives: {
+          "default-src": ["'self'"],
+          "img-src": ["'self'", "data:", "blob:", env("SUPABASE_API_URL")],
+        },
+      },
+    },
+  },
+  "strapi::cors",
+  "strapi::poweredBy",
+  "strapi::logger",
+  "strapi::query",
+  "strapi::body",
+  "strapi::session",
+  "strapi::favicon",
+  "strapi::public",
+];
+
 ```
 
 with values obtained from this page:

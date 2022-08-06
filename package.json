@@ -1,5 +1,5 @@
 {
-  "name": "@strapi/provider-upload-supabase",
+  "name": "strapi-provider-upload-supabase-v4",
   "version": "1.0.0",
   "description": "Supabase storage provider for Strapi upload plugin",
   "homepage": "http://strapi.io",
