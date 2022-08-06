@@ -15,7 +15,7 @@
 1. Install this package
 
 ```
-npm i strapi-provider-upload-supabase
+npm i @strapi/provider-upload-supabase
 ```
 
 2. Create config in `./config.js` with content
