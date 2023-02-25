@@ -1,6 +1,6 @@
 {
   "name": "strapi-provider-upload-supabase-v4",
-  "version": "1.0.15",
+  "version": "1.0.19",
   "description": "Supabase storage provider for Strapi v4 upload plugin",
   "homepage": "http://strapi.io",
   "keywords": [
