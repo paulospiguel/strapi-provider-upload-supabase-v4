@@ -1,7 +1,7 @@
 {
   "name": "strapi-provider-upload-supabase-v4",
-  "version": "1.0.14",
-  "description": "Supabase storage provider for Strapi upload plugin",
+  "version": "1.0.15",
+  "description": "Supabase storage provider for Strapi v4 upload plugin",
   "homepage": "http://strapi.io",
   "keywords": [
     "upload",
@@ -30,10 +30,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/paulospiguel/@strapi/provider-upload-supabase.git"
+    "url": "https://github.com/paulospiguel/strapi-provider-upload-supabase-v4"
   },
   "bugs": {
-    "url": "https://github.com/paulospiguel/@strapi/provider-upload-supabase/issues"
+    "url": "https://github.com/paulospiguel/strapi-provider-upload-supabase-v4/issues"
   },
   "engines": {
     "node": ">=14.19.1 <=16.x.x",
